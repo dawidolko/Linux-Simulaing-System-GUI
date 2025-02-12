@@ -114,7 +114,6 @@ Currently known UI differences from the native interface:
 
 - I didn't have time to adjust fonts, and the interface uses a set of universal fonts, which have a significant difference from the original.
 - Icons are all from screenshots to minimize acquisition difficulties.
-- Most animations in this framework come from animate.css, showing some differences from native performance.
 
 Similarly, although this module adheres to responsive design, it performs poorly on mobile platforms. Partly due to animate.css compatibility issues on mobile platforms and partly because many UI components were designed specifically for desktop platforms, I do not know how they should be laid out on mobile platforms.
 
