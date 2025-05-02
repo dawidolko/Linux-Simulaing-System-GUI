@@ -36,6 +36,10 @@ This project was born by chance, as there was a need to organize a blog for proj
 When planning to start a project, the first challenge is deciding which system to emulate. Since the most popular Ubuntu has been done by others, reinventing the wheel seemed pointless. The author had also seen a MacOS version before, and Windows seemed too costly to mimic in detail due to many years of development. Despite the richness of Linux distributions, our choices seemed limited, with daily-use Red Hat-based distributions not focusing on desktop experience, making implementation less meaningful. The remaining widely accepted distributions were Manjaro, Fedora, and some so-called Gaming ready distros. I finally chose Deepin, which I haven't used but have heard a lot about, and the project is available on Github for vue developers worldwide, also serving as promotion for a domestic product.
 ```
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=dawidolko/Linux-Simulaing-System-GUI&type=Date)](https://star-history.com/#dawidolko/Linux-Simulaing-System-GUI&Date)
+
 ## Quick Start
 
 This project is designed to be served by Github Pages, with all APIs being converted into static files for distribution. If you want to run and debug locally, try the following steps:
