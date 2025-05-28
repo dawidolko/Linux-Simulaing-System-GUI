@@ -5,7 +5,7 @@ _A Vue-powered blog & desktop simulator that looks just like Deepin Linux_
 [![Website Status](https://img.shields.io/website?down_color=red&down_message=offline&up_message=online&url=https%3A%2F%2Flinux.dawidolko.pl)](https://linux.dawidolko.pl)
 [![Stars](https://img.shields.io/github/stars/dawidolko/Simulaing-Linux-System-GUI?style=social)](https://github.com/dawidolko/Simulaing-Linux-System-GUI/stargazers)
 
-> **Live Demo:** <https://linux.dawidolko.pl>  
+> **Live Demo:** <https://linux.dawidolko.pl>
 
 ---
 
