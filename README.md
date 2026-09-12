@@ -1,152 +1,106 @@
-# 🐧 linux.dawidolko.pl  
-_A Vue-powered blog & desktop simulator that looks just like Deepin Linux_
+# Deepin Desktop Portfolio
 
-[![Build](https://img.shields.io/github/actions/workflow/status/dawidolko/Linux-Simulaing-System-GUI/Build.yml?label=build&logo=github)](https://github.com/dawidolko/Linux-Simulaing-System-GUI/actions)
-[![Website Status](https://img.shields.io/website?down_color=red&down_message=offline&up_message=online&url=https%3A%2F%2Flinux.dawidolko.pl)](https://linux.dawidolko.pl)
-[![Stars](https://img.shields.io/github/stars/dawidolko/Simulaing-Linux-System-GUI?style=social)](https://github.com/dawidolko/Simulaing-Linux-System-GUI/stargazers)
+> 🐧 **A desktop with a blog inside it** — Deepin Linux rebuilt in Vue 2, with a terminal, a music player and markdown articles
 
-> **Live Demo:** <https://linux.dawidolko.pl>
+A portfolio and blog wearing the Deepin Linux desktop. Windows open, move, resize and layer as they do on the real system, and the applications are not decorative: a toy terminal, a music player, a recursive file system and a blog whose articles are markdown files rendered in a window.
 
----
+Everything is pre-rendered into `/docs`, so the whole desktop — blog included — is a static site hosted free on GitHub Pages.
 
-## 📑 Table of Contents
-1. [About](#about)
-2. [Project Structure](#project-structure)
-3. [Star History](#star-history)
-4. [Quick Start](#quick-start)
-5. [Blog & Content Management](#blog--content-management)
-6. [Feature Highlights](#feature-highlights)
-7. [Contributing](#contributing)
-8. [License & Author](#license--author)
+![Vue.js](https://img.shields.io/badge/Vue.js-2-4FC08D?logo=vuedotjs&logoColor=white)
+![Vuetify](https://img.shields.io/badge/Vuetify-UI-1867C0?logo=vuetify&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-2-06B6D4?logo=tailwindcss&logoColor=white)
+![Markdown](https://img.shields.io/badge/markdown--it-articles-000000?logo=markdown&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+**Live:** [linux.dawidolko.pl](https://linux.dawidolko.pl)
 
 ---
 
-## About
-`linux.dawidolko.pl` is an **open-source portfolio and blogging platform** that perfectly imitates the Deepin Linux desktop inside the browser.  
-Windows can be opened, moved, resized and layered just like on the real OS; a toy terminal, music player, recursive file system and markdown-powered blog come built-in. All pages are pre-rendered to static files so the whole site can be hosted for free on **GitHub Pages**. 🐧🖥️
+## 🎯 Key Features
 
-Tech stack:
-
-- **Vue 2** + **Vuetify** UI  
-- **Tailwind CSS** & **PostCSS** for styling  
-- **Vue Router** + **Vuex** + **Axios**  
-- **Markdown-it** for article rendering  
-- Fully static **/docs** output for easy deployment
+- **A blog that lives in a window** — articles are markdown files rendered by `markdown-it-vue`, so writing a post means adding a file.
+- **A toy terminal** — commands, a prompt and a recursive file system behind it, rather than a static image of a shell.
+- **A music player** — `vue-aplayer` inside one of the windows.
+- **Real window management** — open, move, resize and layer, with the stacking order maintained.
+- **Pre-rendered to static files** — the build lands in `/docs`, which GitHub Pages serves directly.
+- **A generator script** — `generate.py` prepares the article index, so the blog does not need a backend to list itself.
 
 ---
 
-## Project Structure
-```text
-.
-├── .github/            # GitHub Actions & issue templates
-├── docs/               # Pre-built static files (deployment target)
-├── misc/               # Dev guidelines & helper scripts
-├── public/             # Static assets served at /
-├── src/                # Vue application source
-│   ├── .env*           # Environment configs
-│   ├── components/     # Re-usable Vue components
-│   ├── router/         # Vue-Router setup
-│   ├── store/          # Vuex modules
-│   ├── views/          # Page-level components
-│   └── assets/         # Images, icons, sounds
-├── blog/               # 💡 Your markdown posts live here
-├── generate.py         # Converts blog → static markdown JSON
-├── tailwind.config.js
-├── vue.config.js
-├── package*.json       # NPM metadata & scripts
-├── LICENSE             # AGPL-3.0
-└── README.md           # You are here!
-````
+## 🛠️ Technology Stack
+
+| Technology | Version | Role |
+| --- | --- | --- |
+| **Vue.js** | 2.6 | The desktop, the windows and the apps. |
+| **Vuetify** | — | UI components. |
+| **Tailwind CSS** | 2 | Styling of the Deepin shell. |
+| **Vue Router + Vuex** | — | Routing and shared state. |
+| **Axios** | 0.21 | Fetching article content. |
+| **markdown-it-vue** | 1.1 | Rendering the blog posts. |
+| **vue-aplayer** | 1.6 | The music player. |
 
 ---
 
-## Star History
+## 🚀 Getting Started
 
-[![Star History Chart](https://api.star-history.com/svg?repos=dawidolko/Linux-Simulaing-System-GUI\&type=Date)](https://star-history.com/#dawidolko/Linux-Simulaing-System-GUI&Date)
+### Prerequisites
 
----
+- Node.js 14 or newer
+- npm
 
-## Quick Start
-
-> Tested with **Node 16+** and **@vue/cli 4.5.11**
+### 1. Clone the repository
 
 ```bash
-# 1 – Clone the repo
-git clone https://github.com/dawidolko/Linux-Simulaing-System-GUI
+git clone https://github.com/dawidolko/Linux-Simulaing-System-GUI.git
 cd Linux-Simulaing-System-GUI
-
-# 2 – Install dependencies
-npm install     # or yarn / pnpm
-
-# 3 – Run a local dev server (hot-reload)
-npm run serve
 ```
 
-### Build for Production
+### 2. Install dependencies
 
 ```bash
-# Generate static markdown metadata
-python3 generate.py
-
-# Compile & minify to /docs
-npm run build
+npm install
 ```
 
-`vue.config.js` is already configured so that GitHub Pages serves `docs/` as the site root.
-
----
-
-## Blog & Content Management
-
-| Task                            | How-to                                                                                                                           |
-| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **Add / edit articles**         | Place `.md` files anywhere under `/blog`. The first `# Heading` is used as the title; the first normal line becomes the excerpt. |
-| **Direct-link to an article**   | `https://linux.dawidolko.pl/#/desktop/post/<FILENAME>.md`                                                                        |
-| **Update playlist**             | Edit `public/musics.json` *(see existing format)* and store album art in `public/musiccovers/`.                                  |
-| **Customise terminal commands** | Look inside `src/components/Terminal/commands.js`.                                                                               |
-| **Static rebuild**              | After changing blog posts or music list, re-run `python3 generate.py && npm run build`.                                          |
-
----
-
-## Feature Highlights
-
-* 💻 **Deepin-inspired window system** – drag, resize, minimise, z-index management
-* 📝 **Markdown-driven blog** – write posts in plain `.md`, no CMS required
-* 🎵 **Mini music player** – powered by `vue-aplayer`; playlist is JSON-based
-* 🖼️ **Theming** – Tailwind utility classes + Vuetify make style tweaks trivial
-* ✨ **Zero-backend deployment** – everything compiles to static files for GitHub Pages
-
----
-
-## Contributing
-
-Whether you want to squash a bug 🐞, add a feature ✨ or fix a typo ✍️—PRs are welcome!
+### 3. Run
 
 ```bash
-# Fork → clone
-git checkout -b feat/amazing-feature
-
-# Make your changes
-npm run lint   # please keep the linter happy!
-
-# Commit & push
-git commit -m "Add amazing feature"
-git push origin feat/amazing-feature
-
-# Open a Pull Request 🚀
+npm run serve   # development server at http://localhost:8080
+npm run build   # static build into docs/
+npm run lint    # ESLint
 ```
-
-Because there are no automated GUI tests, **please describe what you changed and include screenshots or GIFs** when your PR touches the UI.
 
 ---
 
-## License & Author
+## 📁 Project Structure
 
-* **License:** GNU **AGPL v3** – free as in freedom 🆓
-* **Author:** **Dawid Olko**
+```
+Linux-Simulaing-System-GUI/
+├── blog/                # markdown articles
+├── generate.py          # builds the article index
+├── docs/                # the static build GitHub Pages serves
+└── src/
+    ├── App.vue          # the desktop shell
+    ├── components/      # windows, terminal, player, file system
+    ├── router/  store/  # routing and state
+    ├── network/         # article fetching
+    └── assets/
+```
 
-  * Portfolio: [https://dawidolko.pl](https://dawidolko.pl)
-  * GitHub: [https://github.com/dawidolko](https://github.com/dawidolko)
-  * LinkedIn: [https://www.linkedin.com/in/dawidolko/](https://www.linkedin.com/in/dawidolko/)
+---
 
-> Built in three caffeine-fuelled nights ☕ with Vue, Tailwind and tons of penguin love.
+## 🖥️ The Family
+
+This is one of four desktop-simulator portfolios, each built on a different stack:
+
+| Desktop | Stack | Live |
+| ------- | ----- | ---- |
+| Windows 10 | React + Fluent UI | [windows.dawidolko.pl](https://windows.dawidolko.pl) |
+| Ubuntu 20.04 | Next.js + Tailwind CSS | [ubuntu.dawidolko.pl](https://ubuntu.dawidolko.pl) |
+| macOS | React + TypeScript + Vite | [macos.dawidolko.pl](https://macos.dawidolko.pl) |
+| Deepin Linux | Vue 2 + Vuetify | [linux.dawidolko.pl](https://linux.dawidolko.pl) |
+
+---
+
+## 📄 License
+
+MIT © [Dawid Olko](https://dawidolko.pl)
