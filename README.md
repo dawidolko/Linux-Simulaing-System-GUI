@@ -131,9 +131,10 @@ Modified by [Dawid Olko](https://dawidolko.pl) from March 2024, last changed in 
 - Added canonical and social tags, robots.txt, a sitemap, llms.txt and a 404 page.
 - Self-hosted the fonts and icons, converted images to WebP and painted the login screen before mounting.
 - Replaced the commercial music playlist and its covers with public domain recordings, and added an empty playlist state.
+- Replaced the original author's profile, skills and CodeWars pages in the About window with this project's own.
 - Added a credits page, a source link and licence notices in the interface, and pointed the context menu and the editor window at this repository.
 
-The blog posts, the About window and the terminal prompt are still the original author's.
+The blog posts and the terminal prompt are still the original author's.
 
 The full history is in the commit log.
 

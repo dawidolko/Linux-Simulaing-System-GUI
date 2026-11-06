@@ -2,7 +2,7 @@
 
 ## Original project
 
-This repository is a modified version of [GoodManWEN.github.io](https://github.com/GoodManWEN/GoodManWEN.github.io) by [GoodManWEN](https://github.com/GoodManWEN), Copyright (C) 2021 GoodManWEN, licensed under AGPL-3.0. The whole work stays under that licence, see `LICENSE`. The changes are listed in the README. `src/assets/images/goodmanwen.png` is the original author's avatar.
+This repository is a modified version of [GoodManWEN.github.io](https://github.com/GoodManWEN/GoodManWEN.github.io) by [GoodManWEN](https://github.com/GoodManWEN), Copyright (C) 2021 GoodManWEN, licensed under AGPL-3.0. The whole work stays under that licence, see `LICENSE`. The changes are listed in the README.
 
 ## Fonts and icons
 
