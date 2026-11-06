@@ -77,6 +77,16 @@
         height: auto;
         opacity: 0.03;
       }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
     </style>
     <script src="/a11y/a11y-panel.js" data-accent="#3d2fb5" defer></script>
   </head>
