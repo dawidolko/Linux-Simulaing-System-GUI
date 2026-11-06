@@ -255,14 +255,14 @@ const store = new Vuex.Store({
     },
     show_context_menu(state) {
       this.commit("refresh_window_focus", { uuid: "ContextMenu" });
-      let e = e || window.event || e.which;
+      let e = window.event;
       state.context_menu_x = e.clientX;
       state.context_menu_y = e.clientY;
       state.context_menu_show = true;
     },
     show_context_menu_bottom_bar(state, payload) {
       this.commit("refresh_window_focus", { uuid: "ContextMenuBottomBar" });
-      let e = e || window.event || e.which;
+      let e = window.event;
       state.context_menu_x = e.clientX;
       state.context_menu_y = e.clientY;
       state.context_menu_show = true;

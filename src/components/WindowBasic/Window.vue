@@ -226,7 +226,7 @@ export default {
       }
       this.$emit("resize_start");
       let orn_mousedown = document.onmousedown;
-      let e = e || window.event || e.which;
+      let e = window.event;
       let downY = e.clientY;
       let min = this.$refs.window_mainbody.style.top;
       min = parseFloat(min.substr(0, min.length - 2));
@@ -235,7 +235,7 @@ export default {
       let orn_height = this.$refs.window_mainbody.style.height;
       orn_height = parseFloat(orn_height.substr(0, orn_height.length - 2));
       let mouseMoveHandler = () => {
-        let e = e || window.event || e.which;
+        let e = window.event;
         let moveY = e.clientY;
         let offsetY = this.getOffset(moveY - downY, min, max);
         this.$refs.window_mainbody.style.height = offsetY + orn_height + "px";
@@ -257,7 +257,7 @@ export default {
       }
       this.$emit("resize_start");
       let orn_mousedown = document.onmousedown;
-      let e = e || window.event || e.which;
+      let e = window.event;
       let downX = e.clientX;
       let min = this.$refs.window_mainbody.style.left;
       min = parseFloat(min.substr(0, min.length - 2));
@@ -266,7 +266,7 @@ export default {
       let orn_width = this.$refs.window_mainbody.style.width;
       orn_width = parseFloat(orn_width.substr(0, orn_width.length - 2));
       let mouseMoveHandler = () => {
-        let e = e || window.event || e.which;
+        let e = window.event;
         let moveX = e.clientX;
         let offsetX = this.getOffset(moveX - downX, min, max);
         this.$refs.window_mainbody.style.width = offsetX + orn_width + "px";
@@ -288,7 +288,7 @@ export default {
       }
       this.$emit("resize_start");
       let orn_mousedown = document.onmousedown;
-      let e = e || window.event || e.which;
+      let e = window.event;
       let downY = e.clientY;
       let downX = e.clientX;
       let minX = this.$refs.window_mainbody.style.left;
@@ -304,7 +304,7 @@ export default {
       let orn_height = this.$refs.window_mainbody.style.height;
       orn_height = parseFloat(orn_height.substr(0, orn_height.length - 2));
       let mouseMoveHandler = () => {
-        let e = e || window.event || e.which;
+        let e = window.event;
         let moveX = e.clientX;
         let moveY = e.clientY;
         let offsetX = this.getOffset(moveX - downX, minX, maxX);
@@ -334,7 +334,7 @@ export default {
       }
       let orn_mousedown = document.onmousedown;
       this.show_cursor_move = true;
-      let e = e || window.event || e.which;
+      let e = window.event;
       let downY = e.clientY;
       let downX = e.clientX;
       let minX = -e.clientX;
@@ -346,7 +346,7 @@ export default {
       let ornY = this.$refs.window_mainbody.style.top;
       ornY = parseFloat(ornY.substr(0, ornY.length - 2));
       let mouseMoveHandler = () => {
-        let e = e || window.event || e.which;
+        let e = window.event;
         let moveX = e.clientX;
         let moveY = e.clientY;
         let offsetX = this.getOffset(moveX - downX, minX, maxX);

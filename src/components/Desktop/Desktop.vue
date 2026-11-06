@@ -215,7 +215,7 @@ export default {
     },
     keyboard_move_down() {
       let orn_mousedown = document.onmousedown;
-      let e = e || window.event || e.which;
+      let e = window.event;
       let downY = e.clientY;
       let downX = e.clientX;
       let orn_top = this.$refs.keyboard_div.style.top;
@@ -223,7 +223,7 @@ export default {
       let orn_left = this.$refs.keyboard_div.style.left;
       orn_left = parseFloat(orn_left.substr(0, orn_left.length - 2));
       let mouseMoveHandler = () => {
-        let e = e || window.event || e.which;
+        let e = window.event;
         let moveY = e.clientY;
         let moveX = e.clientX;
         let offsetY = moveY - downY;

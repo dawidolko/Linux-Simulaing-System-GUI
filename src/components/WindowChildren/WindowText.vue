@@ -232,7 +232,7 @@ export default {
         return;
       }
       this.copy_lock = true;
-      let e = e || window.event || e.which;
+      let e = window.event;
       let downY = e.clientY;
       let downX = e.clientX;
       let element = document.createElement("div");

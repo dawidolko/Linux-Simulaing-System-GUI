@@ -88,7 +88,7 @@ export default {
   },
   methods:{
     show_lock(){
-      let e = e || window.event || e.which;
+      let e = window.event;
       let downX = e.clientX;
       let downY = e.clientY;
       let ptop = this.getTop(this.$refs.llock)

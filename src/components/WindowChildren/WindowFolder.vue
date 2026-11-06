@@ -446,7 +446,7 @@ export default {
     },
     right_resize() {
       let orn_mousedown = document.onmousedown;
-      let e = e || window.event || e.which;
+      let e = window.event;
       let downX = e.clientX;
       let orn_width = this.$refs.leftbar.style.width;
       orn_width = parseFloat(orn_width.substr(0, orn_width.length - 2));
@@ -469,7 +469,7 @@ export default {
       );
       let min = 160;
       let mouseMoveHandler = () => {
-        let e = e || window.event || e.which;
+        let e = window.event;
         let moveX = e.clientX;
         let offsetX = this.getOffset(moveX - downX + orn_width, min, max);
         this.$refs.leftbar.style.width = offsetX + "px";
@@ -493,7 +493,7 @@ export default {
     },
     right_resize_grid_1() {
       let orn_mousedown = document.onmousedown;
-      let e = e || window.event || e.which;
+      let e = window.event;
       let downX = e.clientX;
       downX;
       let name_orn_width = this.$refs.name_col.style.width;
@@ -512,7 +512,7 @@ export default {
       let min_size = 110;
       let max_size = sum - 190;
       let mouseMoveHandler = () => {
-        let e = e || window.event || e.which;
+        let e = window.event;
         let moveX = e.clientX;
         let offsetX = this.getOffset(
           moveX - downX + name_orn_width,
@@ -539,7 +539,7 @@ export default {
     },
     right_resize_grid_2() {
       let orn_mousedown = document.onmousedown;
-      let e = e || window.event || e.which;
+      let e = window.event;
       let downX = e.clientX;
       downX;
       let name_orn_width = this.$refs.name_col.style.width;
@@ -558,7 +558,7 @@ export default {
       let min_size = 120;
       let max_size = sum - name_orn_width - 70;
       let mouseMoveHandler = () => {
-        let e = e || window.event || e.which;
+        let e = window.event;
         let moveX = e.clientX;
         let offsetX = this.getOffset(
           moveX - downX + date_orn_width,
