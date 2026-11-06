@@ -14,7 +14,7 @@
         class="tw-absolute tw-w-full tw-h-full tw-flex tw-flex-row tw-justify-center tw-items-center">
         <div class="tw-w-140"></div>
         <img
-          src="../../assets/images/deepin_3.png"
+          src="/deepin_3.webp"
           alt=""
           class="tw-w-160"
           style="opacity: 0.03; min-width: 600px"
@@ -72,6 +72,7 @@
               v-model="password"
               @keyup.enter="login_clicked"
               type="password"
+              aria-label="Password"
               placeholder="Enter your password"
               autofocus
               autocomplete
@@ -86,6 +87,7 @@
         <button
           class="tw-rounded-full tw-w-12 tw-h-12 tw-mt-2 tw-bg-blue-600 tw-flex tw-items-center tw-justify-center hover:tw-bg-blue-700 tw-outline-none animate__animated"
           v-if="show_middle"
+          aria-label="Log in"
           @click="login_clicked"
           :class="{ animate__shakeX: button_shaking }">
           <v-icon class="tw-text-gray-100">mdi-arrow-right</v-icon>
@@ -125,11 +127,13 @@
           style="min-width: 300px">
           <button
             class="tw-rounded-full tw-w-12 tw-h-12 tw-bg-mygray-light hover:tw-bg-mygray-dark active:tw-bg-mygray-darker tw-flex tw-justify-center tw-items-center tw-outline-none"
+            aria-label="Show the on-screen keyboard"
             @click="show_keyboard_clicked()">
             <v-icon class="tw-text-gray-100">mdi-keyboard</v-icon>
           </button>
           <button
             class="tw-rounded-full tw-w-12 tw-h-12 tw-bg-mygray-light hover:tw-bg-mygray-dark active:tw-bg-mygray-darker ml-8 tw-flex tw-justify-center tw-items-center tw-outline-none"
+            aria-label="Power options"
             @click="show_middle_clicked">
             <v-icon class="tw-text-gray-100">mdi-power</v-icon>
           </button>
@@ -221,8 +225,11 @@ export default {
             name: "Desktop",
           });
 
-          let elem = document.getElementById("app");
-          elem.requestFullscreen();
+          /*
+            Only the fullscreen element and its children are shown, so this has to be
+            the root element or the accessibility panel in <body> disappears.
+          */
+          document.documentElement.requestFullscreen().catch(() => {});
         }, 1800);
         return;
       } else if (this.password === "") {

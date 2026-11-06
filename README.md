@@ -78,7 +78,7 @@ npm install
 
 ```bash
 npm run serve   # development server at http://localhost:8080
-npm run build   # static build into docs/
+npm run build   # static build into docs/, which is committed
 npm run lint    # ESLint
 ```
 
@@ -111,6 +111,12 @@ This is one of four desktop-simulator portfolios, each built on a different stac
 | Ubuntu 20.04 | Next.js + Tailwind CSS | [ubuntu.dawidolko.pl](https://ubuntu.dawidolko.pl) |
 | macOS | React + TypeScript + Vite | [macos.dawidolko.pl](https://macos.dawidolko.pl) |
 | Deepin Linux | Vue 2 + Vuetify | [linux.dawidolko.pl](https://linux.dawidolko.pl) |
+
+---
+
+## ♿ Accessibility
+
+An accessibility panel in the corner of every page changes text size, contrast, font and motion, and remembers the choice on the device. It sits on top of the markup and does not replace accessible markup.
 
 ---
 

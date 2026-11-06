@@ -7,7 +7,7 @@
         ref="background"
         class="tw-relative tw-pb-9/16 tw-h-full tw-select-none">
         <img
-          src="../../assets/images/desktop_1.jpg"
+          src="../../assets/images/desktop_1.webp"
           alt=""
           class="tw-absolute tw-h-full tw-object-cover"
           @load="bgloaded" />
@@ -17,7 +17,6 @@
       ref="frontground"
       class="tw-absolute tw-w-full tw-h-full tw-z-10 tw-overflow-hidden"
       style="top: 0; left: 0; pointer-events: none">
-      <WindowMusic v-if="false" />
       <div v-for="item in window_list" :key="item.uuid">
         <WindowFolder
           v-if="item.type === 'explorer'"
@@ -129,9 +128,7 @@ import BottomBar from "./BottomBar.vue";
 import DesktopFileArray from "./DesktopFileArray.vue";
 import SideBar from "./SideBar.vue";
 import WindowFolder from "../WindowChildren/WindowFolder.vue";
-import WindowMusic from "../WindowChildren/WindowMusic.vue";
 import WindowVSCode from "../WindowChildren/WindowVSCode.vue";
-import WindowText from "../WindowChildren/WindowText.vue";
 import WindowTerminal from "../WindowChildren/WindowTerminal.vue";
 import WindowBrowser from "../WindowChildren/WindowBrowser.vue";
 import WindowSetting from "../WindowChildren/WindowSetting.vue";
@@ -145,8 +142,8 @@ export default {
   components: {
     BottomBar,
     SideBar,
-    WindowText,
-    WindowMusic,
+    WindowText: () => import("../WindowChildren/WindowText.vue"),
+    WindowMusic: () => import("../WindowChildren/WindowMusic.vue"),
     DesktopFileArray,
     WindowFolder,
     WindowVSCode,

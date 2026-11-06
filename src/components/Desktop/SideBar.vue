@@ -27,6 +27,7 @@
             class="tw-flex-none tw-w-12 tw-h-full tw-flex tw-justify-center tw-items-center tw-pl-3">
             <button
               class="tw-w-9 tw-h-9 tw-bg-gray-50 hover:tw-bg-gray-200 tw-rounded-full tw-outline-none active:tw-bg-blue-300"
+              aria-label="Reload messages"
               @click="reload_messages(true)">
               <v-icon class="tw-text-blue-400">mdi-bell</v-icon>
             </button>
@@ -39,6 +40,7 @@
             class="tw-flex-none tw-w-12 tw-h-full tw-flex tw-justify-center tw-items-center tw-pr-3">
             <button
               class="tw-w-9 tw-h-9 hover:tw-bg-gray-200 tw-rounded-full tw-outline-none active:tw-bg-blue-300"
+              aria-label="Clear messages"
               @click="clean_messages">
               <v-icon class="tw-text-gray-800">mdi-delete-sweep</v-icon>
             </button>

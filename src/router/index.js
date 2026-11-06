@@ -2,7 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import store from '../store'
 import LoginPage from '../components/LoginPage/LoginPage'
-import Desktop from '../components/Desktop/Desktop'
+
+const Desktop = () => import('../components/Desktop/Desktop')
+
+const TITLE = 'Deepin Desktop Simulator | Linux in the Browser'
 import Down from '../components/Down'
 
 Vue.use(VueRouter)
@@ -13,7 +16,7 @@ const routes = [
     name: "Down",
     component: Down,
     meta : {
-      title:"No signal"
+      title:TITLE
     }
   },
   {
@@ -21,7 +24,7 @@ const routes = [
     name: "LoginPage",
     component: LoginPage,
     meta : {
-      title:"Deepin"
+      title:TITLE
     }
   },
   {
@@ -29,7 +32,7 @@ const routes = [
     name: "DesktopWithPost",
     component: Desktop,
     meta : {
-      title:"Welcom to WEN's blog"
+      title:TITLE
     }
   },
   {
@@ -37,7 +40,7 @@ const routes = [
     name: "Desktop",
     component: Desktop,
     meta : {
-      title:"Welcom to WEN's blog"
+      title:TITLE
     }
   },
   {

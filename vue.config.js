@@ -14,13 +14,7 @@ module.exports = {
     },
   },
   productionSourceMap: false,
-  pwa: {
-    iconPaths: {
-      favicon32: "favicon.png",
-      favicon16: "favicon.png",
-      appleTouchIcon: "favicon.png",
-      maskIcon: "favicon.png",
-      msTileImage: "favicon.png",
-    },
+  chainWebpack: (config) => {
+    config.plugins.delete("prefetch");
   },
 };

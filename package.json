@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -29,7 +29,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "node-sass": "^5.0.0",
+    "hls.js": "^0.14.17",
     "sass": "^1.32.0",
     "sass-loader": "^10.1.1",
     "vue-cli-plugin-vuetify": "~2.3.1",

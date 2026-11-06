@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Material Design Icons";
+  src: url("/fonts/mdi-subset.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.mdi:before,.mdi-set{display:inline-block;font:normal normal normal 24px/1 "Material Design Icons";font-size:inherit;text-rendering:auto;line-height:inherit;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.mdi-alert::before{content:"\F0026"}
+.mdi-alert-circle-outline::before{content:"\F05D6"}
+.mdi-arrow-all::before{content:"\F0041"}
+.mdi-arrow-down::before{content:"\F0045"}
+.mdi-arrow-left::before{content:"\F004D"}
+.mdi-arrow-right::before{content:"\F0054"}
+.mdi-arrow-up::before{content:"\F005D"}
+.mdi-arrow-up-bold-outline::before{content:"\F09C7"}
+.mdi-backspace-outline::before{content:"\F0B5C"}
+.mdi-battery-70::before{content:"\F0080"}
+.mdi-beaker-question::before{content:"\F1231"}
+.mdi-bell::before{content:"\F009A"}
+.mdi-box-shadow::before{content:"\F0637"}
+.mdi-cached::before{content:"\F00E8"}
+.mdi-card-account-details-star::before{content:"\F02A3"}
+.mdi-cat::before{content:"\F011B"}
+.mdi-check::before{content:"\F012C"}
+.mdi-check-circle::before{content:"\F05E0"}
+.mdi-checkbox-blank-outline::before{content:"\F0131"}
+.mdi-checkbox-marked::before{content:"\F0132"}
+.mdi-chevron-down::before{content:"\F0140"}
+.mdi-chevron-left::before{content:"\F0141"}
+.mdi-chevron-right::before{content:"\F0142"}
+.mdi-chevron-up::before{content:"\F0143"}
+.mdi-circle::before{content:"\F0765"}
+.mdi-clock-time-three::before{content:"\F1441"}
+.mdi-close::before{content:"\F0156"}
+.mdi-close-box-outline::before{content:"\F0158"}
+.mdi-close-circle::before{content:"\F0159"}
+.mdi-currency-eth::before{content:"\F07BB"}
+.mdi-delete::before{content:"\F01B4"}
+.mdi-delete-sweep::before{content:"\F05E9"}
+.mdi-earth::before{content:"\F01E7"}
+.mdi-exclamation::before{content:"\F0205"}
+.mdi-file-document::before{content:"\F0219"}
+.mdi-filmstrip::before{content:"\F0230"}
+.mdi-harddisk::before{content:"\F02CA"}
+.mdi-home-heart::before{content:"\F0827"}
+.mdi-image::before{content:"\F02E9"}
+.mdi-information::before{content:"\F02FC"}
+.mdi-keyboard::before{content:"\F030C"}
+.mdi-link::before{content:"\F0337"}
+.mdi-lock::before{content:"\F033E"}
+.mdi-map::before{content:"\F034D"}
+.mdi-menu::before{content:"\F035C"}
+.mdi-menu-down::before{content:"\F035D"}
+.mdi-minus::before{content:"\F0374"}
+.mdi-minus-box::before{content:"\F0375"}
+.mdi-moon-waxing-crescent::before{content:"\F0F67"}
+.mdi-music::before{content:"\F075A"}
+.mdi-page-first::before{content:"\F0600"}
+.mdi-page-last::before{content:"\F0601"}
+.mdi-paperclip::before{content:"\F03E2"}
+.mdi-pencil::before{content:"\F03EB"}
+.mdi-pistol::before{content:"\F0703"}
+.mdi-plus::before{content:"\F0415"}
+.mdi-post::before{content:"\F1008"}
+.mdi-power::before{content:"\F0425"}
+.mdi-power-standby::before{content:"\F0906"}
+.mdi-radiobox-blank::before{content:"\F043D"}
+.mdi-radiobox-marked::before{content:"\F043E"}
+.mdi-recycle::before{content:"\F044C"}
+.mdi-refresh::before{content:"\F0450"}
+.mdi-reload::before{content:"\F0453"}
+.mdi-restart::before{content:"\F0709"}
+.mdi-script::before{content:"\F0BC1"}
+.mdi-shield-half-full::before{content:"\F0780"}
+.mdi-sleep::before{content:"\F04B2"}
+.mdi-star::before{content:"\F04CE"}
+.mdi-star-half-full::before{content:"\F04D0"}
+.mdi-star-outline::before{content:"\F04D2"}
+.mdi-subdirectory-arrow-left::before{content:"\F060C"}
+.mdi-television-guide::before{content:"\F0503"}
+.mdi-text::before{content:"\F09A8"}
+.mdi-unfold-more-horizontal::before{content:"\F054F"}
+.mdi-volume-high::before{content:"\F057E"}
+.mdi-wifi-arrow-up-down::before{content:"\F16BB"}

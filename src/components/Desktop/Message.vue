@@ -8,7 +8,7 @@
         <div class="tw-flex-grow"></div>
         <div class="tw-text-gray-600 tw-text-xs tw-mr-3" v-if="!mouseon"> {{time}} </div>
         <div class="tw-text-xs tw-mr-3" v-if="mouseon"> 
-          <button class=" tw-w-5  tw-h-5 tw-bg-gray-50 tw-rounded-full tw-flex tw-justify-center tw-items-center hover:tw-bg-gray-200 hover:tw-shadow-md tw-outline-none" @click="close_triggered">
+          <button aria-label="Dismiss message" class=" tw-w-5  tw-h-5 tw-bg-gray-50 tw-rounded-full tw-flex tw-justify-center tw-items-center hover:tw-bg-gray-200 hover:tw-shadow-md tw-outline-none" @click="close_triggered">
             <v-icon x-small>mdi-close</v-icon>
           </button>
         </div>

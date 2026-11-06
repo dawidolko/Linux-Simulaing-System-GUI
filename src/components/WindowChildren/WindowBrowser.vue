@@ -18,7 +18,7 @@
             <div class="tw-absolute tw-py-1 tw-px-2 tw-border" :style="{'top':tipoffsetY + 'px','left':tipoffsetX  + 'px'}" style="background-color:#545868;color:#b2bbc6;white-space:nowrap" v-if="show_lock_tip">Show Website Details</div>
           </div>
           <input class="tw-flex-grow tw-ml-3 tw-h-9 focus:tw-bg-white tw-tracking-tight tw-px-10" style="outline-color:#4285f4;text-color:#939387" v-model="input_src" @keyup.enter="inputSubmit"/>
-          <button class="tw-absolute tw-w-9 tw-h-9 tw-flex tw-items-center tw-justify-center tw-outline-none" style="right: calc(68px + 0.70%)">
+          <button aria-label="Bookmark this page" class="tw-absolute tw-w-9 tw-h-9 tw-flex tw-items-center tw-justify-center tw-outline-none" style="right: calc(68px + 0.70%)">
             <v-icon small>mdi-star-outline</v-icon>
           </button>
           <WindowBrowserButton :disabled="false" :icon="'currency-eth'" class="tw-mx-4" :mode="1"/>

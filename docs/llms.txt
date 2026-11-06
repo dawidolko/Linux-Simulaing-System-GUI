@@ -1,0 +1,11 @@
+# Deepin Desktop Simulator
+
+> A Deepin Linux desktop simulator built with Vue.js by Dawid Olko. It runs in the browser with a login screen, a dock, draggable windows, a terminal, a file manager and a set of demo applications.
+
+## Pages
+
+- [Home](https://linux.dawidolko.pl/): the simulated desktop
+
+## Author
+
+- [Dawid Olko](https://dawidolko.pl): Fullstack / AI Developer, author of this project
