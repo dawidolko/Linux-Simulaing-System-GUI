@@ -34,9 +34,16 @@ Vue.use(utils)
 
 
 
-new Vue({
+/*
+  Waiting one frame lets the HTML in the first response paint before the application
+  replaces it. A tab opened in the background has no frames, so it mounts at once.
+*/
+const mount = () => new Vue({
   vuetify,
   router,
   store,
   render: h => h(App)
 }).$mount('#app')
+
+if (document.hidden) mount()
+else requestAnimationFrame(() => setTimeout(mount))
