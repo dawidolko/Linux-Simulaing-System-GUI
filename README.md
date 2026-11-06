@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://linux.dawidolko.pl/"><img src="docs/readme/banner.webp" alt="Deepin Desktop Portfolio: interface experiment. A desktop with a blog inside it" width="100%"></a>
+</p>
+
 # Deepin Desktop Portfolio
 
 > 🐧 **A desktop with a blog inside it** — Deepin Linux rebuilt in Vue 2, with a terminal, a music player and markdown articles
@@ -12,7 +16,7 @@ Everything is pre-rendered into `/docs`, so the whole desktop — blog included 
 ![Markdown](https://img.shields.io/badge/markdown--it-articles-000000?logo=markdown&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-**Live:** [linux.dawidolko.pl](https://linux.dawidolko.pl)
+**[Live site](https://linux.dawidolko.pl/)** · [Screenshots](#️-screenshots) · [Getting started](#-getting-started)
 
 ---
 
@@ -24,6 +28,15 @@ Everything is pre-rendered into `/docs`, so the whole desktop — blog included 
 - **Real window management** — open, move, resize and layer, with the stacking order maintained.
 - **Pre-rendered to static files** — the build lands in `/docs`, which GitHub Pages serves directly.
 - **A generator script** — `generate.py` prepares the article index, so the blog does not need a backend to list itself.
+
+---
+
+## 🖼️ Screenshots
+
+<p align="center">
+  <img src="docs/readme/desktop.webp" alt="Deepin Desktop Portfolio on a desktop screen" width="74%">
+  <img src="docs/readme/mobile.webp" alt="Deepin Desktop Portfolio on a phone" width="22%">
+</p>
 
 ---
 
@@ -104,3 +117,11 @@ This is one of four desktop-simulator portfolios, each built on a different stac
 ## 📄 License
 
 MIT © [Dawid Olko](https://dawidolko.pl)
+
+---
+
+## 👨‍💻 Author
+
+**Dawid Olko** · Fullstack / AI Developer
+
+[Portfolio](https://olkodawid.dawidolko.pl) · [CV](https://cv.dawidolko.pl) · [LinkedIn](https://www.linkedin.com/in/dawidolko/) · [GitHub](https://github.com/dawidolko)
