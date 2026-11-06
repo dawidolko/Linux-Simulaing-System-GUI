@@ -29,11 +29,15 @@
         class="tw-w-full tw-h-full tw-overflow-hidden tw-rounded-b-2xl tw-flex tw-flex-col tw-items-center tw-justify-center"
         @contextmenu.prevent="mr_clicked">
         <aplayer
+          v-if="musiclist.length > 0"
           autoplay
           style="width: 500px; height: 500px; overflow: scroll"
           :music="firstmusic"
           :list="musiclist"
           :repeat="'repeat-all'" />
+        <div v-else class="tw-text-gray-500 tw-select-none">
+          The playlist is empty.
+        </div>
       </div>
     </template>
   </Window>
@@ -91,7 +95,7 @@ export default {
         if (typeof res.data === "string") {
           console.log("Load error, got string returned");
         }
-        this.musiclist = res.data;
+        this.musiclist = Array.isArray(res.data) ? res.data : [];
       })
       .catch((err) => {
         console.log("[WindowMusic] axios error: ", err);

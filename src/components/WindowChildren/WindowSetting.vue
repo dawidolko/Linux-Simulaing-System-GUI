@@ -21,6 +21,7 @@
                 <WindowSettingIcon :tag="'About Me'" :mdi="'beaker-question'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'About Me'"/>
                 <WindowSettingIcon :tag="'Github Stats'" :mdi="'card-account-details-star'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'Github Stats'"/>
                 <WindowSettingIcon :tag="'CodeWars'" :mdi="'pistol'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'CodeWars'"/>
+                <WindowSettingIcon :tag="'Credits'" :mdi="'card-account-details-star'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'Credits'"/>
               </div>
               <div class="tw-w-full tw-h-full" v-if="selected_tag === 'Skills'">
                 <WindowSettingIcon :tag="'Badges'" :mdi="'shield-half-full'" :selected_tag="selected_tag_2"  @click.native="selected_tag_2 = 'Badges'"/>
@@ -30,6 +31,14 @@
             <div class="vl"></div>
             <div class="tw-flex-grow tw-bg-white tw-h-full">
               <div class=" tw-w-full tw-h-full" v-if="selected_tag === 'Profile'">
+                <div class="tw-w-full tw-h-full tw-flex tw-flex-col tw-p-6 tw-overflow-auto tw-text-left" style="user-select:text" v-if="selected_tag_2 ==='Credits'">
+                  <div class="tw-text-xl tw-font-bold tw-mb-3">Credits &amp; License</div>
+                  <p class="tw-mb-3">Based on <a class="tw-underline" href="https://github.com/GoodManWEN/GoodManWEN.github.io" target="_blank" rel="noopener noreferrer">GoodManWEN.github.io</a> by <a class="tw-underline" href="https://github.com/GoodManWEN" target="_blank" rel="noopener noreferrer">GoodManWEN</a>. Copyright (C) 2021 GoodManWEN.</p>
+                  <p class="tw-mb-3">Modified by Dawid Olko since 2024. The changes are listed in the <a class="tw-underline" href="https://github.com/dawidolko/Linux-Simulaing-System-GUI#-changes-from-the-original" target="_blank" rel="noopener noreferrer">README</a>.</p>
+                  <p class="tw-mb-3">This program is free software: you can redistribute it and modify it under the terms of the <a class="tw-underline" href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener noreferrer">GNU Affero General Public License, version 3</a>. It comes with ABSOLUTELY NO WARRANTY.</p>
+                  <p class="tw-mb-3">Source code of this site: <a class="tw-underline" href="https://github.com/dawidolko/Linux-Simulaing-System-GUI" target="_blank" rel="noopener noreferrer">github.com/dawidolko/Linux-Simulaing-System-GUI</a>.</p>
+                  <p>Not affiliated with Deepin. Interface imitation for portfolio purposes.</p>
+                </div>
                 <div ref="overall_page" class="tw-w-full tw-h-full tw-items-center tw-flex tw-flex-col" style="text-align:center" v-if="selected_tag_2 ==='About Me'">
                   <div class=" tw-w-20 tw-h-20 tw-rounded-full tw-overflow-hidden tw-mt-16">
                     <img src="../../assets/images/goodmanwen.png" alt="" class="tw-bg-red-500">
@@ -112,7 +121,7 @@ export default {
   data(){
     return {
       selected_tag:"Profile",
-      selected_tag_2:"About Me",
+      selected_tag_2:"Credits",
     }
   },
   props:{

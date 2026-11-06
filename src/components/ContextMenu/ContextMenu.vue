@@ -1,6 +1,6 @@
 <template>
   <div
-    class="tw-w-44 tw-h-72 tw-absolute tw-rounded-xl tw-overflow-hidden tw-border tw-border-gray-400 tw-select-none"
+    class="tw-w-44 tw-h-80 tw-absolute tw-rounded-xl tw-overflow-hidden tw-border tw-border-gray-400 tw-select-none"
     style="
       z-index: 9999;
       backdrop-filter: blur(35px);
@@ -27,7 +27,10 @@
       <ContextMenuButton disabled :text="'Wallpapers'" />
       <ContextMenuButton :text="'Settings'" @click.native="settings_clicked" />
       <ContextMenuButton
-        :text="'⭐ This Project'"
+        :text="'Credits & License'"
+        @click.native="settings_clicked" />
+      <ContextMenuButton
+        :text="'⭐ Source Code'"
         @click.native="open_project" />
     </div>
   </div>
@@ -98,7 +101,7 @@ export default {
     },
     open_project() {
       window.open(
-        "https://github.com/GoodManWEN/GoodManWEN.github.io",
+        "https://github.com/dawidolko/Linux-Simulaing-System-GUI",
         "_blank",
       );
       this.$store.commit("hide_context_menu");

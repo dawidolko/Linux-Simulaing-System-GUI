@@ -6,6 +6,8 @@
 
 > 🐧 **A desktop with a blog inside it** — Deepin Linux rebuilt in Vue 2, with a terminal, a music player and markdown articles
 
+**Based on [GoodManWEN.github.io](https://github.com/GoodManWEN/GoodManWEN.github.io) by [GoodManWEN](https://github.com/GoodManWEN), licensed under AGPL-3.0.** This repository is a modified version of that project and is released under the same licence. Most of the application code is his. See [what changed](#-changes-from-the-original). Not affiliated with Deepin; this is an interface imitation for portfolio purposes.
+
 A portfolio and blog wearing the Deepin Linux desktop. Windows open, move, resize and layer as they do on the real system, and the applications are not decorative: a toy terminal, a music player, a recursive file system and a blog whose articles are markdown files rendered in a window.
 
 Everything is pre-rendered into `/docs`, so the whole desktop — blog included — is a static site hosted free on GitHub Pages.
@@ -14,7 +16,7 @@ Everything is pre-rendered into `/docs`, so the whole desktop — blog included 
 ![Vuetify](https://img.shields.io/badge/Vuetify-UI-1867C0?logo=vuetify&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-2-06B6D4?logo=tailwindcss&logoColor=white)
 ![Markdown](https://img.shields.io/badge/markdown--it-articles-000000?logo=markdown&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
+![License](https://img.shields.io/badge/License-AGPL--3.0-blue)
 
 **[Live site](https://linux.dawidolko.pl/)** · [Screenshots](#️-screenshots) · [Getting started](#-getting-started)
 
@@ -24,7 +26,7 @@ Everything is pre-rendered into `/docs`, so the whole desktop — blog included 
 
 - **A blog that lives in a window** — articles are markdown files rendered by `markdown-it-vue`, so writing a post means adding a file.
 - **A toy terminal** — commands, a prompt and a recursive file system behind it, rather than a static image of a shell.
-- **A music player** — `vue-aplayer` inside one of the windows.
+- **A music player** — `vue-aplayer` inside one of the windows, with public domain recordings.
 - **Real window management** — open, move, resize and layer, with the stacking order maintained.
 - **Pre-rendered to static files** — the build lands in `/docs`, which GitHub Pages serves directly.
 - **A generator script** — `generate.py` prepares the article index, so the blog does not need a backend to list itself.
@@ -120,9 +122,28 @@ An accessibility panel in the corner of every page changes text size, contrast, 
 
 ---
 
+## 🔀 Changes from the original
+
+Modified by [Dawid Olko](https://dawidolko.pl) from March 2024, last changed in November 2026. Compared with the original project:
+
+- Refactored and reformatted the window, folder, text, sidebar and store code, and fixed window dragging.
+- Added the accessibility panel, reduced motion support, labels and a page heading.
+- Added canonical and social tags, robots.txt, a sitemap, llms.txt and a 404 page.
+- Self-hosted the fonts and icons, converted images to WebP and painted the login screen before mounting.
+- Replaced the commercial music playlist and its covers with public domain recordings, and added an empty playlist state.
+- Added a credits page, a source link and licence notices in the interface, and pointed the context menu and the editor window at this repository.
+
+The blog posts, the About window and the terminal prompt are still the original author's.
+
+The full history is in the commit log.
+
+---
+
 ## 📄 License
 
-MIT © [Dawid Olko](https://dawidolko.pl)
+[GNU Affero General Public License v3.0](LICENSE).
+
+Copyright (C) 2021 [GoodManWEN](https://github.com/GoodManWEN). Modifications copyright (C) 2024-2026 [Dawid Olko](https://dawidolko.pl). The source of the deployed site is this repository. Fonts, images and music keep their own terms, listed in [CREDITS.md](CREDITS.md).
 
 ---
 

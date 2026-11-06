@@ -105,6 +105,30 @@
         </div>
       </div>
       <div
+        class="tw-absolute tw-bottom-1 tw-w-full tw-text-center tw-text-xs tw-text-gray-300 tw-z-20"
+        style="pointer-events: none">
+        <span style="pointer-events: auto">
+          Based on
+          <a
+            class="tw-underline"
+            style="color: inherit"
+            href="https://github.com/GoodManWEN/GoodManWEN.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GoodManWEN.github.io</a
+          >
+          · AGPL-3.0 ·
+          <a
+            class="tw-underline"
+            style="color: inherit"
+            href="https://github.com/dawidolko/Linux-Simulaing-System-GUI"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Source</a
+          >
+        </span>
+      </div>
+      <div
         ref="footer"
         class="tw-w-full tw-h-32 tw-flex-none tw-flex tw-z-10 tw-flex-wrap">
         <div
